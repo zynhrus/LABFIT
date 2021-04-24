@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */; };
 		972F63E726334106005A40B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F63E626334106005A40B4 /* AppDelegate.swift */; };
 		972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F63E826334106005A40B4 /* SceneDelegate.swift */; };
 		972F63EB26334106005A40B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F63EA26334106005A40B4 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		972F63E326334106005A40B4 /* LABFIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LABFIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972F63E626334106005A40B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972F63E826334106005A40B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				972F63F426334107005A40B4 /* LaunchScreen.storyboard */,
 				972F63F726334107005A40B4 /* Info.plist */,
 				972F63EF26334106005A40B4 /* LABFIT.xcdatamodeld */,
+				50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */,
 			);
 			path = LABFIT;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */,
 				972F63E726334106005A40B4 /* AppDelegate.swift in Sources */,
 				972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */,
+				50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZWJAU2KMB;
 				INFOPLIST_FILE = LABFIT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZWJAU2KMB;
 				INFOPLIST_FILE = LABFIT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
