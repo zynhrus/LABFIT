@@ -15,6 +15,7 @@
 		972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 972F63EF26334106005A40B4 /* LABFIT.xcdatamodeld */; };
 		972F63F326334107005A40B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972F63F226334107005A40B4 /* Assets.xcassets */; };
 		972F63F626334107005A40B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972F63F426334107005A40B4 /* LaunchScreen.storyboard */; };
+		97D420232635BC22006E53C8 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		972F63F226334107005A40B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972F63F526334107005A40B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		972F63F726334107005A40B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				972F63F726334107005A40B4 /* Info.plist */,
 				972F63EF26334106005A40B4 /* LABFIT.xcdatamodeld */,
 				50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */,
+				97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */,
 			);
 			path = LABFIT;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */,
 				972F63E726334106005A40B4 /* AppDelegate.swift in Sources */,
 				972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */,
+				97D420232635BC22006E53C8 /* DateCollectionViewCell.swift in Sources */,
 				50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
