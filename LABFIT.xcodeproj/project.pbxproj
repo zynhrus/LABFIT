@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41E20B60263718640087E9B3 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20B5A263718640087E9B3 /* History+CoreDataClass.swift */; };
+		41E20B61263718640087E9B3 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20B5B263718640087E9B3 /* History+CoreDataProperties.swift */; };
+		41E20B62263718640087E9B3 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20B5C263718640087E9B3 /* User+CoreDataClass.swift */; };
+		41E20B63263718640087E9B3 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20B5D263718640087E9B3 /* User+CoreDataProperties.swift */; };
+		41E20B64263718640087E9B3 /* Food+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20B5E263718640087E9B3 /* Food+CoreDataClass.swift */; };
+		41E20B65263718640087E9B3 /* Food+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20B5F263718640087E9B3 /* Food+CoreDataProperties.swift */; };
 		50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */; };
 		972F63E726334106005A40B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F63E626334106005A40B4 /* AppDelegate.swift */; };
 		972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F63E826334106005A40B4 /* SceneDelegate.swift */; };
@@ -23,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41E20B5A263718640087E9B3 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
+		41E20B5B263718640087E9B3 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		41E20B5C263718640087E9B3 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		41E20B5D263718640087E9B3 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		41E20B5E263718640087E9B3 /* Food+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataClass.swift"; sourceTree = "<group>"; };
+		41E20B5F263718640087E9B3 /* Food+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		972F63E326334106005A40B4 /* LABFIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LABFIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972F63E626334106005A40B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41E20B67263718730087E9B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41E20B6A2637188E0087E9B3 /* Food */,
+				41E20B69263718850087E9B3 /* User */,
+				41E20B682637187D0087E9B3 /* History */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41E20B682637187D0087E9B3 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				41E20B5A263718640087E9B3 /* History+CoreDataClass.swift */,
+				41E20B5B263718640087E9B3 /* History+CoreDataProperties.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		41E20B69263718850087E9B3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				41E20B5C263718640087E9B3 /* User+CoreDataClass.swift */,
+				41E20B5D263718640087E9B3 /* User+CoreDataProperties.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		41E20B6A2637188E0087E9B3 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				41E20B5E263718640087E9B3 /* Food+CoreDataClass.swift */,
+				41E20B5F263718640087E9B3 /* Food+CoreDataProperties.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
 		972F63DA26334106005A40B4 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +119,7 @@
 		972F63E526334106005A40B4 /* LABFIT */ = {
 			isa = PBXGroup;
 			children = (
+				41E20B67263718730087E9B3 /* Model */,
 				972F63E626334106005A40B4 /* AppDelegate.swift */,
 				972F63E826334106005A40B4 /* SceneDelegate.swift */,
 				972F63EA26334106005A40B4 /* ViewController.swift */,
@@ -162,12 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E20B61263718640087E9B3 /* History+CoreDataProperties.swift in Sources */,
 				972F63EB26334106005A40B4 /* ViewController.swift in Sources */,
+				41E20B64263718640087E9B3 /* Food+CoreDataClass.swift in Sources */,
 				972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */,
 				972F63E726334106005A40B4 /* AppDelegate.swift in Sources */,
+				41E20B60263718640087E9B3 /* History+CoreDataClass.swift in Sources */,
+				41E20B62263718640087E9B3 /* User+CoreDataClass.swift in Sources */,
 				972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */,
 				97D420232635BC22006E53C8 /* DateCollectionViewCell.swift in Sources */,
+				41E20B63263718640087E9B3 /* User+CoreDataProperties.swift in Sources */,
 				50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */,
+				41E20B65263718640087E9B3 /* Food+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
