@@ -16,7 +16,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var circularProgressBarView: CircularProgressBarView!
     var circularViewDuration: TimeInterval = 2
     
-    var dateList = [25,24,23,22,21,20,19]
+    var dateList = [1,2,3,4,123,19,20,21,22,23,24,25,26,27,28,29]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // set view
         circularProgressBarView = CircularProgressBarView(frame: .zero)
         // align to the center of the screen
-        circularProgressBarView.frame = CGRect(x: view.frame.width/2, y: 200,width: 100, height: 100)
+        circularProgressBarView.frame = CGRect(x: view.frame.width/2, y: 220,width: 100, height: 100)
         // call the animation with circularViewDuration
         circularProgressBarView.progressAnimation(duration: circularViewDuration)
         // add this view to the view controller
@@ -47,6 +47,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         cell.dateNum.text = String(dateList[indexPath.row])
         
+        cell.updateCell()
+        
+//        collectionView.layoutIfNeeded()
+//        collectionView.scrollToItem(at: IndexPath(row: 5, section: 0), at: .centeredHorizontally, animated: false)
+
         return cell
     }
 }
