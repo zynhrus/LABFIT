@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4152C054263A635C0086945C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C052263A635C0086945C /* User+CoreDataClass.swift */; };
+		4152C055263A635C0086945C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152C053263A635C0086945C /* User+CoreDataProperties.swift */; };
+		41A1D67B2639346F00E6F5F0 /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A1D67A2639346F00E6F5F0 /* WelcomePage.storyboard */; };
+		41A1D684263942F200E6F5F0 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1D683263942F200E6F5F0 /* WelcomePageViewController.swift */; };
 		50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */; };
 		972F63E726334106005A40B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F63E626334106005A40B4 /* AppDelegate.swift */; };
 		972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F63E826334106005A40B4 /* SceneDelegate.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4152C052263A635C0086945C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4152C053263A635C0086945C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		41A1D67A2639346F00E6F5F0 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
+		41A1D683263942F200E6F5F0 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		50F7CD1F2634272E006BD439 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		972F63E326334106005A40B4 /* LABFIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LABFIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972F63E626334106005A40B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4152C056263A63640086945C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				4152C052263A635C0086945C /* User+CoreDataClass.swift */,
+				4152C053263A635C0086945C /* User+CoreDataProperties.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		41A1D68D2639463C00E6F5F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4152C056263A63640086945C /* User */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		972F63DA26334106005A40B4 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +98,14 @@
 			isa = PBXGroup;
 			children = (
 				97BFDEAC2639A4A400A1F88E /* mealListCell */,
+				41A1D68D2639463C00E6F5F0 /* Model */,
+				4C16FF6A26396106000F48FE /* Cell Profile */,
 				972F63E626334106005A40B4 /* AppDelegate.swift */,
 				972F63E826334106005A40B4 /* SceneDelegate.swift */,
 				972F63EA26334106005A40B4 /* ViewController.swift */,
+				41A1D683263942F200E6F5F0 /* WelcomePageViewController.swift */,
+				41A1D67A2639346F00E6F5F0 /* WelcomePage.storyboard */,
+				4C16FF662639402A000F48FE /* profileViewController.swift */,
 				972F63EC26334106005A40B4 /* Main.storyboard */,
 				973803632636C62C00369594 /* AddMealPage.storyboard */,
 				973803672636C77600369594 /* ProfilePage.storyboard */,
@@ -161,7 +191,9 @@
 				978D12FC263700BF0046639A /* MealPlanPage.storyboard in Resources */,
 				972F63F326334107005A40B4 /* Assets.xcassets in Resources */,
 				973803642636C62C00369594 /* AddMealPage.storyboard in Resources */,
+				4C16FF6E2639618F000F48FE /* TableViewProfileCell.xib in Resources */,
 				973803682636C77600369594 /* ProfilePage.storyboard in Resources */,
+				41A1D67B2639346F00E6F5F0 /* WelcomePage.storyboard in Resources */,
 				972F63EE26334106005A40B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,11 +207,16 @@
 			files = (
 				972F63EB26334106005A40B4 /* ViewController.swift in Sources */,
 				97BFDEAF2639A54800A1F88E /* MealListTableViewCell.swift in Sources */,
+				4C16FF6D2639618F000F48FE /* TableViewProfileCell.swift in Sources */,
 				972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */,
+				4C16FF672639402A000F48FE /* profileViewController.swift in Sources */,
 				972F63E726334106005A40B4 /* AppDelegate.swift in Sources */,
 				972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */,
 				97D420232635BC22006E53C8 /* DateCollectionViewCell.swift in Sources */,
+				41A1D684263942F200E6F5F0 /* WelcomePageViewController.swift in Sources */,
+				4152C054263A635C0086945C /* User+CoreDataClass.swift in Sources */,
 				50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */,
+				4152C055263A635C0086945C /* User+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZWJAU2KMB;
+				DEVELOPMENT_TEAM = VXCW9GZNN5;
 				INFOPLIST_FILE = LABFIT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -347,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZWJAU2KMB;
+				DEVELOPMENT_TEAM = VXCW9GZNN5;
 				INFOPLIST_FILE = LABFIT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
