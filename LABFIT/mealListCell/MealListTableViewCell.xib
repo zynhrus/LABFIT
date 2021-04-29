@@ -27,11 +27,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f33-aw-twg">
-                        <rect key="frame" x="313" y="26" width="40" height="37.5"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="tintColor" red="0.34509803919999998" green="0.62352941179999999" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="300 calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkF-TH-HOz">
                         <rect key="frame" x="125" y="55" width="180" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,12 +34,17 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TkN-v5-M9G">
+                        <rect key="frame" x="309" y="25" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="tintColor" red="0.34509803919999998" green="0.62352941179999999" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="caloriesCell" destination="WkF-TH-HOz" id="d61-JB-63y"/>
-                <outlet property="checkBoxCell" destination="f33-aw-twg" id="Oa0-pT-jXx"/>
+                <outlet property="checkBox" destination="TkN-v5-M9G" id="RsI-Lm-hA6"/>
                 <outlet property="imageCell" destination="Aun-Tz-1s7" id="Bbq-jQ-GXN"/>
                 <outlet property="titleCell" destination="Sj1-4u-l0F" id="Qdw-IM-sfR"/>
             </connections>
@@ -52,6 +52,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="square" catalog="system" width="128" height="114"/>
     </resources>
 </document>

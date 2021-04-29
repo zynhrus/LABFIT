@@ -30,6 +30,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var shuffleDinner = true
     var shuffleSnack = true
     
+    var toggle = false
+    
     var sectionCount = 1
     var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
     
@@ -124,7 +126,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }catch{
             print("could not load data")
         }
-    }
+            }
     
     func setUpTable() {
         let nib = UINib(nibName: "MealListTableViewCell", bundle: nil)
@@ -221,7 +223,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             cell.food = snackFoods[indexPath.row]
         }
         
-//        cell.food = foods[indexPath.row]
+//        cell.checkBoxCell.addTarget(self, action: #selector(checkMarkButtonClicked(sender:)), for: .touchUpInside)
+//        cell.checkBoxCell.tag = indexPath.row
+        
         cell.updateUI()
         
         return cell
@@ -231,34 +235,81 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return 90
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 40))
-        let label = UILabel()
+    @objc func checkMarkButtonClicked ( sender: UIButton) {
+         print("button presed")
+     
+         if sender.isSelected {
+             //uncheck the butoon
+             sender.isSelected = false
+             
+         } else {
+             // checkmark it
+             sender.isSelected = true
+
+         }
+     
+     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mealListCell") as! MealListTableViewCell
         
-        label.frame = CGRect.init(x: 0, y: 0, width: headerView.frame.width, height: 30)
-        label.text = "   \(mealSection[section])"
-        label.textColor = .black
+        print(indexPath.section)
+        print(indexPath.row)
         
-        headerView.addSubview(label)
-        headerView.layer.backgroundColor = UIColor.white.cgColor
+        if(indexPath.section == 0){
+            print(breakfastFoods[indexPath.row].name)
+            cell.updateCheckBox(condition: true)
+        } else if(indexPath.section == 1){
+            print(lunchFoods[indexPath.row].name)
+            cell.updateCheckBox(condition: true)
+        } else if(indexPath.section == 2){
+            print(dinnerFoods[indexPath.row].name)
+            cell.updateCheckBox(condition: true)
+        } else if(indexPath.section == 3){
+            print(snackFoods[indexPath.row].name)
+            cell.updateCheckBox(condition: true)
+        }
         
-        return headerView
+        
+        mealList.reloadData()
+        
+        print("TAPPPPED")
+    }
+
+        
+        func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 40))
+            let label = UILabel()
+            
+            label.frame = CGRect.init(x: 0, y: 0, width: headerView.frame.width, height: 30)
+            label.text = "   \(mealSection[section])"
+            label.textColor = .black
+            
+            headerView.addSubview(label)
+            headerView.layer.backgroundColor = UIColor.white.cgColor
+            
+            return headerView
+        }
+        
+        func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+            return mealSection[section]
+        }
+        
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return mealSection[section]
+    enum category : String{
+        case breakfast = "Breakfast"
+        case lunch = "Lunch"
+        case dinner = "Dinner"
+        case snacks = "Snacks"
     }
     
-}
+    enum imgTypeEnum : String {
+        case jpeg = "jpeg"
+        case png = "png"
+    }
 
-enum category : String{
-    case breakfast = "Breakfast"
-    case lunch = "Lunch"
-    case dinner = "Dinner"
-    case snacks = "Snacks"
-}
-
-enum imgTypeEnum : String {
-    case jpeg = "jpeg"
-    case png = "png"
+struct mealCheck {
+    var checkBox : Bool = false
+    var Foods : Food
 }

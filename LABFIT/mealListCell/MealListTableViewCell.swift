@@ -11,7 +11,7 @@ class MealListTableViewCell: UITableViewCell {
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var titleCell: UILabel!
     @IBOutlet weak var caloriesCell: UILabel!
-    @IBOutlet weak var checkBoxCell: UIImageView!
+    @IBOutlet weak var checkBox: UIImageView!
     
     var food: Food!
     
@@ -21,8 +21,16 @@ class MealListTableViewCell: UITableViewCell {
         imageCell.image = UIImage(data: food.image! as Data)
 //        imageCell.image = UIImage(named: "bacon")
         imageCell.layer.cornerRadius = 15
-        checkBoxCell.layer.cornerRadius = 5
-        checkBoxCell.image = UIImage(systemName: "checkmark.square")
+    }
+    
+    func updateCheckBox(condition: Bool){
+        print(condition)
+        if condition == true {
+            self.titleCell.text = "TESTING"
+            
+        } else {
+            self.titleCell.text = "NOT TESTING"
+        }
     }
     
     override func awakeFromNib() {
