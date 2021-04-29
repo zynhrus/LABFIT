@@ -73,5 +73,20 @@ extension profileViewController : UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.row == 0 {
+               self.performSegue(withIdentifier: "showInfo", sender: self)
+        } else if indexPath.row == 1 {
+               self.performSegue(withIdentifier: "showInfo", sender: self)
+        } else if indexPath.row == 2 {
+                   self.performSegue(withIdentifier: "showInfo", sender: self)
+        } else if indexPath.row == 3 {
+            self.performSegue(withIdentifier: "showBmr", sender: self)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        let indexPathForSelectedRow = self.tableView.indexPathForSelectedRow
+        print("\(String(describing: indexPathForSelectedRow))")
+        return indexPath
     }
 }

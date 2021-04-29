@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C14E9E8263B30840058779C /* BmrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14E9E7263B30840058779C /* BmrViewController.swift */; };
+		4C14E9EB263B3A1E0058779C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14E9EA263B3A1E0058779C /* InfoViewController.swift */; };
 		4C16FF672639402A000F48FE /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C16FF662639402A000F48FE /* profileViewController.swift */; };
 		4C16FF6D2639618F000F48FE /* TableViewProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C16FF6B2639618F000F48FE /* TableViewProfileCell.swift */; };
 		4C16FF6E2639618F000F48FE /* TableViewProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C16FF6C2639618F000F48FE /* TableViewProfileCell.xib */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C14E9E7263B30840058779C /* BmrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmrViewController.swift; sourceTree = "<group>"; };
+		4C14E9EA263B3A1E0058779C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		4C16FF662639402A000F48FE /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		4C16FF6B2639618F000F48FE /* TableViewProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProfileCell.swift; sourceTree = "<group>"; };
 		4C16FF6C2639618F000F48FE /* TableViewProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewProfileCell.xib; sourceTree = "<group>"; };
@@ -93,7 +97,9 @@
 				972F63EC26334106005A40B4 /* Main.storyboard */,
 				973803632636C62C00369594 /* AddMealPage.storyboard */,
 				973803672636C77600369594 /* ProfilePage.storyboard */,
+				4C14E9EA263B3A1E0058779C /* InfoViewController.swift */,
 				978D12FB263700BF0046639A /* MealPlanPage.storyboard */,
+				4C14E9E7263B30840058779C /* BmrViewController.swift */,
 				978D12FF263701F10046639A /* SearchPage.storyboard */,
 				972F63F426334107005A40B4 /* LaunchScreen.storyboard */,
 				972F63F226334107005A40B4 /* Assets.xcassets */,
@@ -182,7 +188,9 @@
 			files = (
 				972F63EB26334106005A40B4 /* ViewController.swift in Sources */,
 				4C16FF6D2639618F000F48FE /* TableViewProfileCell.swift in Sources */,
+				4C14E9E8263B30840058779C /* BmrViewController.swift in Sources */,
 				972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */,
+				4C14E9EB263B3A1E0058779C /* InfoViewController.swift in Sources */,
 				4C16FF672639402A000F48FE /* profileViewController.swift in Sources */,
 				972F63E726334106005A40B4 /* AppDelegate.swift in Sources */,
 				972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */,
