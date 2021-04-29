@@ -65,11 +65,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="eXi-ev-7wA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="circleButton" destination="pbQ-jS-P9X" id="ZgZ-R3-i9h"/>
-                        <outlet property="imageProfile" destination="ZGT-gf-Sil" id="h5B-SK-z7c"/>
-                        <outlet property="tableView" destination="KCc-aK-XNM" id="bkB-Kb-ZqU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gli-Z7-hLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
