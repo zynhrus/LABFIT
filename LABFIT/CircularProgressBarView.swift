@@ -27,7 +27,7 @@ class CircularProgressBarView: UIView {
         circleLayer.lineCap = .round
         circleLayer.lineWidth = 20.0
         circleLayer.strokeEnd = 1.0
-        circleLayer.strokeColor = UIColor.white.cgColor
+        circleLayer.strokeColor = UIColor.clear.cgColor
         // added circleLayer to layer
         layer.addSublayer(circleLayer)
         // progressLayer path defined to circularPath
@@ -37,7 +37,7 @@ class CircularProgressBarView: UIView {
         progressLayer.lineCap = .round
         progressLayer.lineWidth = 10.0
         progressLayer.strokeEnd = 0
-        progressLayer.strokeColor = UIColor.green.cgColor
+        progressLayer.strokeColor = UIColor(red: 88/255.0, green: 159/255.0, blue: 149/255.0, alpha: 1.0).cgColor
         // added progressLayer to layer
         layer.addSublayer(progressLayer)
     }
