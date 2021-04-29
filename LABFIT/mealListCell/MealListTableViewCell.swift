@@ -16,16 +16,13 @@ class MealListTableViewCell: UITableViewCell {
     var food: Food!
     
     func updateUI(){
-        titleCell.text = food.foodName
+        titleCell.text = food.name
         caloriesCell.text = "\(String(food.calories)) calories"
-        imageCell.image = UIImage(named: food.image)
+        imageCell.image = UIImage(data: food.image! as Data)
+//        imageCell.image = UIImage(named: "bacon")
         imageCell.layer.cornerRadius = 15
         checkBoxCell.layer.cornerRadius = 5
-        if food.checkBox {
-            checkBoxCell.image = UIImage(systemName: "checkmark.square.fill")
-        } else {
-            self.imageCell.image = UIImage(systemName: "checkmark.square")
-        }
+        checkBoxCell.image = UIImage(systemName: "checkmark.square")
     }
     
     override func awakeFromNib() {
@@ -39,12 +36,4 @@ class MealListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-}
-
-struct Food {
-    var foodName:String
-    var calories:Int
-    var image:String
-    var checkBox:Bool
-    var category:String
 }

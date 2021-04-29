@@ -25,6 +25,8 @@
 		97BFDEAF2639A54800A1F88E /* MealListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BFDEAD2639A54800A1F88E /* MealListTableViewCell.swift */; };
 		97BFDEB02639A54800A1F88E /* MealListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BFDEAE2639A54800A1F88E /* MealListTableViewCell.xib */; };
 		97D420232635BC22006E53C8 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */; };
+		97E4B5EC263B0155007E1AEC /* Food+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4B5EA263B0155007E1AEC /* Food+CoreDataClass.swift */; };
+		97E4B5ED263B0155007E1AEC /* Food+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4B5EB263B0155007E1AEC /* Food+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		97BFDEAD2639A54800A1F88E /* MealListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewCell.swift; sourceTree = "<group>"; };
 		97BFDEAE2639A54800A1F88E /* MealListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealListTableViewCell.xib; sourceTree = "<group>"; };
 		97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		97E4B5EA263B0155007E1AEC /* Food+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataClass.swift"; sourceTree = "<group>"; };
+		97E4B5EB263B0155007E1AEC /* Food+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		972F63DA26334106005A40B4 = {
 			isa = PBXGroup;
 			children = (
+				97E4B5EA263B0155007E1AEC /* Food+CoreDataClass.swift */,
+				97E4B5EB263B0155007E1AEC /* Food+CoreDataProperties.swift */,
 				972F63E526334106005A40B4 /* LABFIT */,
 				972F63E426334106005A40B4 /* Products */,
 			);
@@ -99,13 +105,11 @@
 			children = (
 				97BFDEAC2639A4A400A1F88E /* mealListCell */,
 				41A1D68D2639463C00E6F5F0 /* Model */,
-				4C16FF6A26396106000F48FE /* Cell Profile */,
 				972F63E626334106005A40B4 /* AppDelegate.swift */,
 				972F63E826334106005A40B4 /* SceneDelegate.swift */,
 				972F63EA26334106005A40B4 /* ViewController.swift */,
 				41A1D683263942F200E6F5F0 /* WelcomePageViewController.swift */,
 				41A1D67A2639346F00E6F5F0 /* WelcomePage.storyboard */,
-				4C16FF662639402A000F48FE /* profileViewController.swift */,
 				972F63EC26334106005A40B4 /* Main.storyboard */,
 				973803632636C62C00369594 /* AddMealPage.storyboard */,
 				973803672636C77600369594 /* ProfilePage.storyboard */,
@@ -191,7 +195,6 @@
 				978D12FC263700BF0046639A /* MealPlanPage.storyboard in Resources */,
 				972F63F326334107005A40B4 /* Assets.xcassets in Resources */,
 				973803642636C62C00369594 /* AddMealPage.storyboard in Resources */,
-				4C16FF6E2639618F000F48FE /* TableViewProfileCell.xib in Resources */,
 				973803682636C77600369594 /* ProfilePage.storyboard in Resources */,
 				41A1D67B2639346F00E6F5F0 /* WelcomePage.storyboard in Resources */,
 				972F63EE26334106005A40B4 /* Main.storyboard in Resources */,
@@ -207,9 +210,8 @@
 			files = (
 				972F63EB26334106005A40B4 /* ViewController.swift in Sources */,
 				97BFDEAF2639A54800A1F88E /* MealListTableViewCell.swift in Sources */,
-				4C16FF6D2639618F000F48FE /* TableViewProfileCell.swift in Sources */,
+				97E4B5EC263B0155007E1AEC /* Food+CoreDataClass.swift in Sources */,
 				972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */,
-				4C16FF672639402A000F48FE /* profileViewController.swift in Sources */,
 				972F63E726334106005A40B4 /* AppDelegate.swift in Sources */,
 				972F63E926334106005A40B4 /* SceneDelegate.swift in Sources */,
 				97D420232635BC22006E53C8 /* DateCollectionViewCell.swift in Sources */,
@@ -217,6 +219,7 @@
 				4152C054263A635C0086945C /* User+CoreDataClass.swift in Sources */,
 				50F7CD202634272E006BD439 /* CircularProgressBarView.swift in Sources */,
 				4152C055263A635C0086945C /* User+CoreDataProperties.swift in Sources */,
+				97E4B5ED263B0155007E1AEC /* Food+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
