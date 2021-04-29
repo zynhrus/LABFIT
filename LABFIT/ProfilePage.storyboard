@@ -11,32 +11,80 @@
         <!--Profile-->
         <scene sceneID="ozN-vY-9WH">
             <objects>
-                <viewController storyboardIdentifier="Profile" id="aUw-Hr-lUE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" id="aUw-Hr-lUE" customClass="profileViewController" customModule="LABFIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dGF-lN-j0P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1M-ev-Ofj">
-                                <rect key="frame" x="160" y="110" width="95" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zc9-Ia-yIV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="My Profile" id="nxL-bt-ZHU"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="ZGT-gf-Sil">
+                                <rect key="frame" x="107" y="148" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1z3-M3-4Ye"/>
+                                    <constraint firstAttribute="height" constant="200" id="ols-EP-bqT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josua David" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bng-nM-JRQ">
+                                <rect key="frame" x="30" y="361" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KCc-aK-XNM">
+                                <rect key="frame" x="0.0" y="381" width="414" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbQ-jS-P9X">
+                                <rect key="frame" x="249" y="269" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="📷">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tFN-fJ-XSY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZGT-gf-Sil" firstAttribute="centerX" secondItem="dGF-lN-j0P" secondAttribute="centerX" id="1S3-35-it1"/>
+                            <constraint firstItem="bng-nM-JRQ" firstAttribute="leading" secondItem="tFN-fJ-XSY" secondAttribute="leading" constant="30" id="6Ul-67-wxf"/>
+                            <constraint firstItem="zc9-Ia-yIV" firstAttribute="trailing" secondItem="tFN-fJ-XSY" secondAttribute="trailing" id="6W5-Dv-rg8"/>
+                            <constraint firstItem="zc9-Ia-yIV" firstAttribute="leading" secondItem="tFN-fJ-XSY" secondAttribute="leading" id="9P2-t9-yOh"/>
+                            <constraint firstItem="bng-nM-JRQ" firstAttribute="top" secondItem="ZGT-gf-Sil" secondAttribute="bottom" constant="13" id="AKM-FK-hEV"/>
+                            <constraint firstItem="ZGT-gf-Sil" firstAttribute="centerY" secondItem="dGF-lN-j0P" secondAttribute="centerY" constant="-200" id="XPk-P1-wog"/>
+                            <constraint firstItem="zc9-Ia-yIV" firstAttribute="top" secondItem="tFN-fJ-XSY" secondAttribute="top" id="dm9-Aa-TMM"/>
+                            <constraint firstItem="tFN-fJ-XSY" firstAttribute="trailing" secondItem="bng-nM-JRQ" secondAttribute="trailing" constant="30" id="oYV-ni-Im4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="eXi-ev-7wA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="circleButton" destination="pbQ-jS-P9X" id="ZgZ-R3-i9h"/>
+                        <outlet property="imageProfile" destination="ZGT-gf-Sil" id="h5B-SK-z7c"/>
+                        <outlet property="tableView" destination="KCc-aK-XNM" id="bkB-Kb-ZqU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gli-Z7-hLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80" y="97"/>
+            <point key="canvasLocation" x="79.710144927536234" y="96.428571428571431"/>
         </scene>
     </scenes>
     <resources>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="profile" width="2662" height="3993"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
