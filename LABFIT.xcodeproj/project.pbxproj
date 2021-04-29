@@ -22,7 +22,8 @@
 		973803642636C62C00369594 /* AddMealPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973803632636C62C00369594 /* AddMealPage.storyboard */; };
 		973803682636C77600369594 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973803672636C77600369594 /* ProfilePage.storyboard */; };
 		978D12FC263700BF0046639A /* MealPlanPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978D12FB263700BF0046639A /* MealPlanPage.storyboard */; };
-		978D1300263701F10046639A /* SearchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978D12FF263701F10046639A /* SearchPage.storyboard */; };
+		97BFDEAF2639A54800A1F88E /* MealListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BFDEAD2639A54800A1F88E /* MealListTableViewCell.swift */; };
+		97BFDEB02639A54800A1F88E /* MealListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BFDEAE2639A54800A1F88E /* MealListTableViewCell.xib */; };
 		97D420232635BC22006E53C8 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +45,8 @@
 		973803632636C62C00369594 /* AddMealPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddMealPage.storyboard; sourceTree = "<group>"; };
 		973803672636C77600369594 /* ProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
 		978D12FB263700BF0046639A /* MealPlanPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MealPlanPage.storyboard; sourceTree = "<group>"; };
-		978D12FF263701F10046639A /* SearchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchPage.storyboard; sourceTree = "<group>"; };
+		97BFDEAD2639A54800A1F88E /* MealListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewCell.swift; sourceTree = "<group>"; };
+		97BFDEAE2639A54800A1F88E /* MealListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealListTableViewCell.xib; sourceTree = "<group>"; };
 		97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 		972F63E526334106005A40B4 /* LABFIT */ = {
 			isa = PBXGroup;
 			children = (
+				97BFDEAC2639A4A400A1F88E /* mealListCell */,
 				41A1D68D2639463C00E6F5F0 /* Model */,
 				4C16FF6A26396106000F48FE /* Cell Profile */,
 				972F63E626334106005A40B4 /* AppDelegate.swift */,
@@ -107,7 +110,6 @@
 				973803632636C62C00369594 /* AddMealPage.storyboard */,
 				973803672636C77600369594 /* ProfilePage.storyboard */,
 				978D12FB263700BF0046639A /* MealPlanPage.storyboard */,
-				978D12FF263701F10046639A /* SearchPage.storyboard */,
 				972F63F426334107005A40B4 /* LaunchScreen.storyboard */,
 				972F63F226334107005A40B4 /* Assets.xcassets */,
 				972F63F726334107005A40B4 /* Info.plist */,
@@ -116,6 +118,15 @@
 				97D420222635BC22006E53C8 /* DateCollectionViewCell.swift */,
 			);
 			path = LABFIT;
+			sourceTree = "<group>";
+		};
+		97BFDEAC2639A4A400A1F88E /* mealListCell */ = {
+			isa = PBXGroup;
+			children = (
+				97BFDEAD2639A54800A1F88E /* MealListTableViewCell.swift */,
+				97BFDEAE2639A54800A1F88E /* MealListTableViewCell.xib */,
+			);
+			path = mealListCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				978D1300263701F10046639A /* SearchPage.storyboard in Resources */,
+				97BFDEB02639A54800A1F88E /* MealListTableViewCell.xib in Resources */,
 				972F63F626334107005A40B4 /* LaunchScreen.storyboard in Resources */,
 				978D12FC263700BF0046639A /* MealPlanPage.storyboard in Resources */,
 				972F63F326334107005A40B4 /* Assets.xcassets in Resources */,
@@ -195,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972F63EB26334106005A40B4 /* ViewController.swift in Sources */,
+				97BFDEAF2639A54800A1F88E /* MealListTableViewCell.swift in Sources */,
 				4C16FF6D2639618F000F48FE /* TableViewProfileCell.swift in Sources */,
 				972F63F126334106005A40B4 /* LABFIT.xcdatamodeld in Sources */,
 				4C16FF672639402A000F48FE /* profileViewController.swift in Sources */,
